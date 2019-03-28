@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="data">
+			<Node name="logs">
+				<Prp name="key" type="S" value="{4C24F3EE-3E5E-4A19-9323-832979B5FD44}"/>
+				<Prp name="relpath" type="S" value="Log"/>
+			</Node>
+			<Node name="variables">
+				<Node name="datav3">
+					<Node name="var0">
+						<Node name="value">
+							<Prp name="strvalue" type="H" value="5000610073007300"/>
+						</Node>
+						<Prp name="name" type="S" value="currentTestCaseStatus"/>
+					</Node>
+					<Node name="var1">
+						<Node name="value">
+							<Prp name="strvalue" type="H" value="53005400300032005F00430072006500610074006500540077006F004E006500770043007500730074006F006D006500720073005F005500730069006E006700440069006300740069006F006E0061007200690065007300"/>
+						</Node>
+						<Prp name="name" type="S" value="currentTestCaseId"/>
+					</Node>
+					<Node name="var2">
+						<Node name="value">
+							<Prp name="strvalue" type="H" value="53005400300032005F00430072006500610074006500540077006F004E006500770043007500730074006F006D006500720073005F005500730069006E006700440069006300740069006F006E00610072006900650073002E0078006D006C00"/>
+						</Node>
+						<Prp name="name" type="S" value="currentTestCaseXmlFile"/>
+					</Node>
+					<Node name="var3">
+						<Node name="value">
+							<Prp name="strvalue" type="H" value="4300720065006100740065002000740077006F0020006E0065007700200063007500730074006F006D0065007200730020007500730069006E0067002000640069006300740069006F006E0061007200690065007300"/>
+						</Node>
+						<Prp name="name" type="S" value="currentTestCaseDescription"/>
+					</Node>
+				</Node>
+				<Prp name="version" type="I" value="3"/>
+			</Node>
+		</Node>
+		<Prp name="signature" type="S" value="{49FC0C30-9EF7-4DBD-97A8-B7A00E79A2AF}"/>
+	</Node>
+</Nodes>
